@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+            "name": "ts-server",
+			"runtimeExecutable": "nodemon",
+			"runtimeArgs": ["-r", "ts-node/register", "-r", "dotenv/config"],
+			"program": "${workspaceFolder}/node_modules/nodemon/bin/nodemon.js",
+			"restart": false,
+			"console": "integratedTerminal",
+			"args": ["./src/local_server.ts"],
+			"envFile": "${workspaceFolder}/.env",
+			"env": {
+			  	"NODE_ENV": "development"
+			},
+			"cwd": "${workspaceFolder}"
+		}
+	]
+}

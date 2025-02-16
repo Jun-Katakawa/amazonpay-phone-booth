@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2015",
+		"sourceMap": false,
+		"outDir": "dist",
+		"strict": true,
+		"removeComments": true,
+		"esModuleInterop": true,
+		"strictNullChecks": true, // null と undefined が型として明示的に指定されていないとエラーになります。
+		"noImplicitAny": false, // 型が明示的に指定されていない場合、any 型として暗黙的に扱うことを許可しません。
+		"noImplicitThis": true, // thisキーワードがどの型であるかが明確にされていない場合にエラーが発生します。
+		"noImplicitReturns": true, // ファイルが厳密モードで実行されるようにします。
+		"noFallthroughCasesInSwitch": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"alwaysStrict": true,
+		"strictFunctionTypes": true, // 関数の引数や戻り値の型が適切でない場合にエラーを発生させます。
+		"strictPropertyInitialization": true, // クラスのプロパティがコンストラクタ内で初期化されていない場合にエラーを発生させます。
+		// "moduleResolution": "node",
+		"paths": {
+			"shared-types/*": ["../local_types/*"]
+		}
+	},
+	"include": ["src/**/*.ts"],
+	"exclude": ["node_modules"]
+}
+  

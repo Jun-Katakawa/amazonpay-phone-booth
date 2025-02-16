@@ -1,0 +1,15 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "chrome",
+			"request": "launch",
+			"name": "debug react",
+			"url": "http://localhost:3851/amazonpay_phone_booth/",
+			"webRoot": "${workspaceFolder}",
+			"preLaunchTask": "react-start",
+			"postDebugTask": "terminate-react-start",
+  			"sourceMaps": true
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "dynamodb_server01",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"start": "nodemon --watch src --exec node src/server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@aws-sdk/client-dynamodb": "^3.87.0",
+		"aws-sdk": "^2.1135.0",
+		"config": "^3.3.7",
+		"nodemon": "^2.0.16",
+		"url": "^0.11.0"
+	}
+}
