@@ -77,6 +77,14 @@ export const handler = async (event: LambdaEvent) => {
 			}
 			break;
 
+		case "door/sensor_log": // event
+			switch (method) {
+			case "POST":
+				console.log(params.log);
+				break;
+			}
+			break;
+
 		default:
 			console.log("server.ts 未設定 functionId/ID:", functionId, mode);
 			return {
