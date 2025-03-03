@@ -103,7 +103,7 @@ export const Update = async (phone_booth_id: string, door_status: "open" | "clos
                 console.error("Unable to update item. Error JSON:", JSON.stringify(err, null, 2));
                 reject(err);
             } else {
-                console.log("UpdateBalance succeeded:", JSON.stringify(data, null, 2));
+                console.log("UpdateStatus succeeded:", JSON.stringify(data, null, 2));
                 resolve({
                     result_data: data
                 });
