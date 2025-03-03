@@ -4,16 +4,18 @@ import time
 import urequests  # MicroPython用のHTTPリクエストライブラリ
 import json  # MicroPython の json モジュールをインポート
 
-# Wi-Fi設定
-SSID = "Buffalo-2G-B4E0"  # ここにWi-FiのSSIDを入力
-PASSWORD = "RNXwux3xEfcjSOg4"  # ここにWi-Fiのパスワードを入力
-
-# HTTP設定
-# URL = "https://pto3brxqi0.execute-api.ca-central-1.amazonaws.com/amazonpay-phone-booth/door/sensor"
-URL = "https://u3chat.loclx.io/door/sensor"
-
 # Room IDの設定
 BOOTH_ID = "13F-003"
+
+# Wi-Fi設定
+# SSID = "Buffalo-2G-B4E0"  # ここにWi-FiのSSIDを入力
+# PASSWORD = "RNXwux3xEfcjSOg4"  # ここにWi-Fiのパスワードを入力
+SSID = "SPW_X12_f27876"  # ここにWi-FiのSSIDを入力
+PASSWORD = "895c06aecf2ad"  # ここにWi-Fiのパスワードを入力
+
+# HTTP設定
+URL = "https://pto3brxqi0.execute-api.ca-central-1.amazonaws.com/door/sensor"
+# URL = "https://u3chat.loclx.io/door/sensor"
 
 # ピン設定
 reed_switch = machine.Pin(15, machine.Pin.IN, machine.Pin.PULL_UP)

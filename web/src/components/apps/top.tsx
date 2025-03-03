@@ -29,6 +29,9 @@ export const TopPage: FC = memo(() => {
     const { getAllPhoneBooths } = usePhoneBoothMaster();
 
     useEffect(() => {
+        setInterval(() => {
+            getCurrentPhoneBooths();
+        }, 60000);
         getCurrentPhoneBooths();
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);

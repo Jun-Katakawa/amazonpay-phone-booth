@@ -21,7 +21,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     // "outDir": "./build",
-    "sourceMap": false,
+    "sourceMap": true,
     "baseUrl": ".",
     "paths": {
 			"shared-types/*": ["../local_types/*"]
